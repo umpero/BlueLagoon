@@ -57,7 +57,7 @@ public static class Extensions
                 ? queryable.Where(expression).ToListAsync()
                 : queryable.AsNoTracking().Where(expression).ToListAsync();
 
-    public static Task<List<TProjection>> ReturnListAsync<T, TProjection>(this IQueryable<T> queryable, Expression<Func<T, bool>> expression, IConfigurationProvider mapperConfiguration bool withTracking = true)
+    public static Task<List<TProjection>> ReturnListAsync<T, TProjection>(this IQueryable<T> queryable, Expression<Func<T, bool>> expression, IConfigurationProvider mapperConfiguration, bool withTracking = true)
         where T : BaseEntity
         where TProjection : class
         => withTracking
