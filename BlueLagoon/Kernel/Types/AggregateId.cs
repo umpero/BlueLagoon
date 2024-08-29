@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace BlueLagoon.Kernel.Types;
+﻿namespace BlueLagoon.Kernel.Types;
 
 public class AggregateId<T>(T value) : IEquatable<AggregateId<T>>
 {

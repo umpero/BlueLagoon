@@ -1,9 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using BlueLagoon.Kernel.Types.Abstractions;
 
 namespace BlueLagoon.Kernel.Types;
 
-public abstract class AggregateRoot<T>
+public abstract class AggregateRoot<T> : BaseEntity
 {
     public T Id { get; protected set; }
 
